@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.jahanbabu.retrofit2sample.Utils.Constants;
 
 /**
  * Created by jahangirkabir on 2/7/16.
@@ -40,14 +43,18 @@ public class MainActivity extends AppCompatActivity {
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showResult("postNormal");
+                if (Constants.BASE_URL_POST.contains("{URL}")){
+                    Toast.makeText(MainActivity.this, "Please add POST URL ", Toast.LENGTH_LONG).show();
+                } else showResult("postNormal");
             }
         });
 
         postFileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showResult("postMultipart");
+                if (Constants.BASE_URL_POST.contains("{URL}")){
+                    Toast.makeText(MainActivity.this, "Please add POST URL ", Toast.LENGTH_LONG).show();
+                } else showResult("postMultipart");
             }
         });
     }
