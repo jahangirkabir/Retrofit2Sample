@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jahanbabu.retrofit2sample.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://muslimsalat.com/dhaka.json" />
+
+    <Button
+        android:id="@+id/getNormalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET Request (Normal)" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="http://muslimsalat.com/dhaka/weekly.json" />
+
+    <Button
+        android:id="@+id/getQueryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET Request (With Query)" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="{BASE_URL}/api/register" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST Request (Normal)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="{BASE_URL}/api/send-comments/" />
+
+    <Button
+        android:id="@+id/postFileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST Request (With Image/File)" />
+
+</LinearLayout>
